@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+}
+
+.logo {
+    height: 66px;
+}
+
+.contact-form {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+}
+
+.contact-form h2 {
+    color: #505050;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ADEE;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight:lighter;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0077B5;
+  }
+  .submit-button img {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+.map-container {
+    background: linear-gradient(180deg, #103977, #171352);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.category-item {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.category-item h5 {
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .category-item h5 {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background: linear-gradient(0deg, #171352, #052c67);
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px;
+    }
+
+    .map-container {
+        margin-bottom: 30px;
+    }
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .map-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .card-content {
+    position: relative; /* Ensure content is above the map */
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    z-index: 1; /* Ensure content is above the map */
+  }
+  .btn-google-map {
+    color: #000;
+    background-color: #fff;
+    border-color: #ccc;
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .btn-google-map img {
+    max-width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+.card-content {
+    color: rgb(255, 255, 255); /* Adjust text color for better visibility on background image */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for content readability */
+  }
+  
+  .logo-footer {
+    max-width: 100%; /* Ensures the logo scales with its container */
+    height: auto; /* Maintains aspect ratio */
+    padding: 5px; /* Optional: Add padding for better alignment */
+}
